@@ -12,6 +12,6 @@ string printNumbers(int start, int end)
     //базавый случай.
     if(start == end) return start.ToString();
     //рекурсивный случай.
-    return (start + " " + printNumbers(start +1, end));
+    return (start + ", " + printNumbers(start +1, end));
 }
 Console.WriteLine(printNumbers(M,N));
